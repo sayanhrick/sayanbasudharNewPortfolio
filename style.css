@@ -1,0 +1,951 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: "Gilroy";
+    background: white;
+    width: 100%;
+    
+    
+}
+body{
+    width: 100%;
+    background: white;
+}
+
+.header{
+    padding-top: 0%;
+    width: 100%;
+    height: 100px;
+    background: whitesmoke;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);;
+    
+    display: flex;
+}
+.nav{
+    display: flex;
+}
+
+.left{
+    color: #5f5b5bab;
+    width: 50%;
+    padding-left: 20%;
+    padding-top: 3%;
+    font-weight: 600;
+    font-size: 2vw;
+    
+}
+
+
+.topnav{
+    width: 50%;
+    display: inline-block;
+    font-size: 1.2vw;
+    color: #ababab;
+    text-decoration: none;
+    background: white;
+    padding-top: 3%;
+    
+    
+}
+.topnav li{
+    list-style-type: none;
+    display: inline;
+}
+.topnav :link{
+    color: #ababab;
+    text-align: center;
+    
+}
+.topnav a{
+    color: #ababab;
+    text-decoration: none;
+    padding-left: 5%;
+    padding-right: 8%;
+}
+
+.topnav :active{
+    text-decoration: none;
+    color: #ababab;
+}
+.topnav ::before{
+    text-decoration: none;
+    color: #ababab;
+}
+.topnav ::after{
+    text-decoration: none;
+    color: #ababab;
+    
+}
+.topnav li a:hover{
+    color: #ababab;
+    text-decoration: none;
+    font-size: 1.2em;
+    
+}
+
+.topnav .icon i{
+    display: none;
+}
+
+
+.main{
+    background: black;
+    width: 100%;
+    margin-top: 5%;
+    height: calc(100%-100px);
+    
+}
+.main .section1{
+    display: inline-flex;
+}
+
+.info{
+    color: #ababab;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow:1px 1px 1px  black;
+    font-size: 2vw;
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+.info .info1{
+    font-size: 4vw;
+}
+.info1{
+    color: rgb(228, 218, 218);
+    text-shadow:1px 1px 1px  black;
+    
+    
+}
+.info .info2{
+    font-size: 5vw;
+    text-shadow:1px 1px 1px  black;
+}
+
+
+
+/* animation */
+.info2{
+    font-size: 10px;
+    color: #5f5b5bab;
+    white-space:nowrap;
+    overflow:hidden;
+    animation: info2 2s steps(10) infinite normal,
+        blink 1000ms steps(10) infinite normal;
+    border-right: 5px solid black;
+}
+
+@keyframes info2 {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 150%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+
+    to {
+        border-color: solid;
+    }
+}
+
+.section1{
+    padding-bottom: 10%;
+}
+
+.photo{
+    display: block;
+    width: 50%;
+    height: 20vw;
+
+}
+
+
+
+.photo .photoId{
+    
+    align-self: left;
+    height: 30vw;
+    width: 20vw;
+    text-align: right;
+    padding-left: 5px;
+    border-radius: 10px;
+    border-color: #000;
+}
+
+.section2{
+    width: 100%;
+    height: 300px;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.section2 .objective{
+    display: block;
+    width: 100%;
+    background: white;
+    color: lightgray;
+    text-shadow: 1px 1px black;
+    background: white;
+    font-size: 3vw;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+.section2 .line{
+    background:black;
+    height: 1.5px;
+    width: 70%;
+    color: #000;
+    margin-left: 10%;
+}
+
+.section2 .objectivePara{
+    width: 70%;
+    padding-top: 5%;
+    padding-left: 12%;
+    justify-content: center;
+    font-size: 2vw;
+    text-align: left;
+    color: #5f5b5bab;
+}
+
+    /* Education Section */
+
+.education{
+    padding-top: 10%;
+    display: block; 
+    width: 100%;
+    height: 550px;
+    background: white;
+}
+.education .line
+{
+    
+    background:black;
+    height: 1.5px;
+    width: 70%;
+    color: #000;
+}
+
+.education .educationInfo{
+    font-size: 3vw;
+    padding-top: 10%;
+    padding-left: 10%;
+    color: rgb(10, 131, 223);
+    text-shadow: 1px 1px black;
+    background: white;
+}
+
+.schooling{
+    padding-top: 5%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cemk{
+    width: 70%;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+}
+.cemk .cemkPic{
+    width: 30vw;
+    height: 100%;
+}
+.cemk .Tech{
+    padding-top: 3%;
+    padding-left: 5%;
+    font-weight: 700;
+}
+.cemk .cgpa{
+    padding-top: 3%;
+    font-weight: 200;
+    text-align: left;
+}
+
+
+.pb{
+    width: 70%;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+}
+.pb .pbPic{
+    width: 30vw;
+    height: 100%;
+}
+.pb .pbInfo{
+    padding-top: 3%;
+    padding-left: 5%;
+    font-weight: 700;
+}
+.pb .pbInfo1{
+    padding-top: 3%;
+    font-weight: 200;
+    text-align: left;
+}
+
+
+.sphs{
+    width: 70%;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+}
+.sphs .sphsPic{
+    width: 30vw;
+    height: 100%;
+}
+.sphs .sphsInfo{
+    padding-top: 3%;
+    padding-left: 5%;
+    font-weight: 700;
+}
+.sphs .sphsInfo1{
+    padding-top: 3%;
+    font-weight: 200;
+    text-align: left;
+}
+
+
+
+/* skills  section*/
+
+.skills{
+    padding-top: 10%;
+    display: block; 
+    width: 100%;
+    height: 800px;
+    background: white;
+    box-sizing: border-box;
+}
+.skills .line{
+    background:black;
+    height: 1.5px;
+    width: 70%;
+    color: #000;
+}
+
+.skills .skillsInfo{
+    font-size: 3vw;
+    padding-top: 10%;
+    padding-left: 10%;
+    color: rgb(10, 131, 223);
+    text-shadow: 1px 1px black;
+    background: white;
+}
+.display{
+    display: flex;
+}
+.skillsDisplay{
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    display: block;
+    
+}
+.skills p{
+    margin: 0;
+    height: 4vw;
+    padding-top: 3%;
+    padding-left: 30%;
+    font-size: 1.5vw;
+    font-weight: 500;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #ababab;
+}
+
+.container {
+    margin: auto;
+    border-radius: 10px;
+    width: 50%;
+    height: 3vw;
+    background-color: #ddd;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6); 
+    box-sizing: border-box;
+  }
+  
+  .skill {
+    text-align: center;
+    height: 3vw;
+    text-align: right;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .html {width: 90%; background-color: #04AA6D;}
+  .css {width: 90%; background-color: #2196F3;}
+  .js {width: 65%; background-color: #f44336;}
+  .mySql {width: 65%; background-color: #808080;}
+  .dataStructure {width: 80%; background-color: #1aa731ab;}
+  .firebase {width: 65%; background-color: orange;}
+  .c {width: 60%; background-color: rgb(105, 188, 200);}
+  .java {width: 65%; background-color: rgb(53, 42, 22);}
+  .python {width: 40%; background-color: rgb(242, 7, 121);}
+  .react{width: 70%; background-color: rgb(128, 167, 170);}
+  .bootstrap{width: 70%; background-color: rgb(45, 183, 91);}
+  
+  
+  .skillsDisplay1{
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    height: 10%;
+    display: block;
+    
+}
+
+.container .skill:hover{
+    font-size: 2vw;
+    background: brown;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6); 
+}
+
+
+
+/* contact form */
+
+.contact{
+    padding-top: 10%;
+    display: block;
+    width: 100%;
+    height: 1200px;
+    background: white;
+    
+}
+.contact .line
+{
+    
+    background:black;
+    height: 1.5px;
+    width: 70%;
+    color: #000;
+}
+
+.contact .contactInfo{
+    font-size: 3vw;
+    padding-top: 10%;
+    padding-left: 10%;
+    color: rgb(10, 131, 223);
+    text-shadow: 1px 1px black;
+    background: white;
+}
+
+
+.contact .contactForm{
+    
+    
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 60%;
+    padding: 10px;
+    background: rgb(217, 164, 66);
+    height: 600px;
+    border-radius: 20px;
+    
+}
+.contactForm{
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6); 
+}
+.sendUs{
+    margin-top: 3%;
+    width: 60%;
+    font-weight: 800;
+    font-size: 2.8vw;
+    padding-left: 5%;
+    color: white;
+    background: rgb(217, 164, 66);
+}
+
+.lowerInput{
+    display: flex;
+    padding: auto;
+}
+
+.contactForm .leftContact{
+    width: 50%;
+    display: flex;
+    
+    
+}
+.contactForm .rightContact{
+    width: 50%;
+    height: 50px;
+    display: flex;
+}
+.inputLeft{
+    display: block;
+    padding-top: 10%;
+    width: 100%;
+    height: 100%;
+    background: rgb(217, 164, 66);
+}
+.inputLeft input{
+    width: 80%;
+    margin-top:5%;
+    margin-bottom: 5%;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6); 
+}
+#nameInput{
+    color: #4e4545ab;
+    margin-top: 10%;
+    font-size: 1.5vw;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+#emailInput{
+    color: #4e4545ab;
+    margin-top: 2%;
+    font-size: 1.5vw;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#contactInput{
+    color: #4e4545ab;
+    margin-top: 2%;
+    font-size: 1.5vw;
+    padding: 5px;
+    border-radius: 10px;
+}
+.contactForm .rightContact{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    background: rgb(217, 164, 66);
+    
+}
+.message{
+    resize: none;
+    color: #4e4545ab;
+    width: 80%;
+    height: 20vw;
+    /* padding: auto; */
+    padding: 30px 20px;
+    margin-left: 45px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6); 
+}
+
+
+
+
+
+
+
+.submit{
+    
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 60%;
+    padding: 10px;
+    color: white;
+    background: black;
+    border-radius: 30px;
+} 
+
+.submit:hover{
+    background: rgb(10, 131, 223);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6); 
+}
+
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background: black;
+    color: white;
+}
+.footerSpan{
+    color: white;
+    justify-content: center;
+    width: 50%;
+    
+    
+    background: black;
+}
+
+/* Responsive design */
+
+@media (max-width:600px) 
+{
+
+    body{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .header{
+        width: 100%;
+        height: 60px;
+        
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);;
+    }
+    .nav{
+        padding-top: 2%;
+    }
+    .left{
+        font-size: 4vw;
+        font-weight: 500;
+        width: 50%;
+        padding-left: 5%;
+    }
+    
+   
+      
+      .topnav {
+        padding-top: 5px;
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+        font-size: 1.6vw;
+        font-weight: 500;
+      }
+      
+       .topnav #myLinks {
+        display: none;
+      }
+      
+
+      .topnav a.icon {
+        background: white;
+        display: flex;
+        position: relative;
+        right: 0;
+        top: 0;
+        color: black;
+      }
+      .topnav .icon{
+        
+        background: #000;
+        font-size: 3vw;
+        color: #ababab;
+        
+      }
+      .topnav a:hover {
+        background-color: white;
+        color: black;
+      }
+      
+      .active {
+        background-color: black;
+        color: #ababab;
+      }
+      .topnav .icon i{
+        display: block;
+        padding-top: -10vw;
+        
+        margin-right: 10%;
+        margin-left: 80%;
+    }
+
+    .main{
+        background: white;
+        width: 100%;
+        margin-top: 10%;
+        height: calc(100%-60px);
+    }
+    
+    
+    
+    .info{
+        color: #ababab;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 7vw;
+        padding-left: 10%;
+    }
+    .info1{
+        background:#ababab;
+        color: white;
+        font-size: 10vw;
+        
+    }
+    .info2{
+        font-size: 15vw;
+        padding-top: 2%;
+        color: #5f5b5bab;
+    }
+    .photo{
+        justify-content: center;
+        display: flex;
+        background: white;
+    }
+    .photoId{
+        height: 100vw;
+        width: 800vw;
+        border-radius: 5%;
+        margin-right: 14%;
+        padding-top: 5%;
+    }
+    .photo .photoId{
+        border: black;
+    }
+    
+
+    /* Section of Objective */
+
+    .section2{
+        width: 100%;
+        height: 50px;
+    }
+    .section2 .objectivePara{
+        
+    }
+
+    /* Education Section */
+    .education{
+        background: white;
+        font-weight: 800;
+        width: 100%;
+        height: 300px;
+        margin-top: 15%;
+        
+        transform-origin: left;
+        animation: education linear;
+        animation-timeline: scroll(y);
+        
+    }
+    .education .educationInfo{
+        font-size: 3vw;
+    }
+    .educationInfo{
+        text-align: left;
+        background: white;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        color: #ababab;
+        
+    }
+
+    .educationInfo .line{
+        height: 0.8px;
+    }
+
+    .education .schooling{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cemk{
+        margin: 2% 2% 2% 0;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        background:white;
+        padding-left: 5%;
+    }
+    .cemk .cemkPic{
+        width: 50px;
+        height: 50px;
+        display: flex;
+    }
+    .cemk .Tech{
+        text-align: center;
+        padding-top: 3%;
+        font-size: 3vw;
+        
+    }
+    .cemk .cgpa{
+        padding-top: 3%;
+        font-size: 3vw;
+        padding-left: 10%;
+        font-weight: 100;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+    }
+
+
+    .pb{
+        margin: 2% 2% 2% 0;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        background:white;
+        padding-left: 5%;
+        
+        
+    }
+    .pb .pbPic{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        color: white;
+        
+    }
+    .pb .pbInfo{
+        text-align: center;
+        padding-top: 3%;
+        font-size: 3vw;
+        justify-content: center;
+    }
+    .pbInfo1{
+        font-weight: 100;
+        font-size: 3vw;
+        padding-top: 4%;
+
+    }
+
+    .sphs{
+        margin: 2% 2% 2% 0;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        background:white;
+        padding-left: 5%;
+    }
+    .sphs .sphsPic{
+        width: 50px;
+        height: 50px; 
+        color: white;
+    }
+    .sphs .sphsInfo{
+        padding-top: 5%;
+        font-size: 3vw;
+        text-align: center;
+
+    }
+    .sphsInfo1{
+        font-weight: 100;
+        font-size: 3vw;
+        padding-top: 4%;
+        
+
+    }
+
+    @keyframes education {
+        to{
+            scale: 1 1;
+        }
+        
+    }
+
+
+
+
+    /* Skills */
+
+    .skills{
+        width: 100%;
+        height: 400px;
+    }
+    .skills .skillsInfo{
+        font-size: 4vw;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .skills .display{
+        width: 80%;
+        margin: auto;
+        
+        padding: 10px;
+        
+    }
+
+    .container{
+        margin: auto;
+        border-radius: 10px;
+        width: 100%;
+        height: 4vw;
+        background-color: #ddd;
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6); 
+        box-sizing: border-box;
+    }
+    .skillsDisplay{
+        margin-right: 20px;
+    }
+
+    .skill{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    height: 4vw;
+    font-size: 1.5vw;
+    text-align: right;
+    color: white;
+    border-radius: 10px;
+    }
+
+    .skills p{
+        margin-top: 10px;
+        height: 4vw;
+        padding-top: 3%;
+        padding-left: 30%;
+        font-size: 2.4vw;
+        font-weight: 500;
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #ababab;
+    }
+
+
+
+
+
+    /* Contact */
+
+    .contact{
+        height: 100px;
+    }
+    .contact .contactInfo{
+        font-size: 4vw;
+    }
+    .contact .contactForm{
+        height: 400px;
+    }
+    .contact .lowerInput{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: rgb(217, 164, 66);
+        justify-content: center;
+    }
+    .lowerInput .leftContact{
+        
+        width: 100%;
+        justify-content: center;
+    }
+    .contactForm .sendUs{
+        font-size: 5vw;
+    }
+
+    .leftContact input{
+        justify-content: center;
+        margin-left: 5%;
+    }
+    .lowerInput .rightContact{
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    .rightContact .message{
+        width: 90%;
+        font-size: 2.5vw;
+        padding: 5px ;
+        border-radius: 5px;
+        margin :auto;
+    }
+
+    
+    
+    
+
+}
